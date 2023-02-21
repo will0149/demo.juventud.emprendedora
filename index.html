@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="assets/css/general.css" media=”screen” />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.0/css/all.css">
+
+  <title>Juventud Emprendedora</title>
+
+  <style>
+    .nav-item:hover {
+      color: darkcyan;
+    }
+    
+    .navbar-brand:hover {
+      color: darkcyan;
+    }
+    
+    .section-title {
+      text-align: center;
+      color: #011510;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+    }
+
+    .timeline {
+      border-left: 1px solid hsl(0, 0%, 90%);
+      position: relative;
+      list-style: none;
+    }
+
+    .timeline .timeline-item {
+      position: relative;
+    }
+
+    .timeline .timeline-item:after {
+      position: absolute;
+      display: block;
+      top: 0;
+    }
+
+    .timeline .timeline-item:after {
+      background-color: hsl(0, 0%, 90%);
+      left: -38px;
+      border-radius: 50%;
+      height: 11px;
+      width: 11px;
+      content: "";
+    }
+
+    .about {
+      background-color: aliceblue;
+      padding: 3%;
+    }
+    .events {
+      margin-top: 1%;
+      margin-bottom: 1%;
+    }
+
+    .card {
+      background-color: aliceblue;
+    }
+
+    .team {
+      background-color: aliceblue;
+      padding: 3%;
+    }
+
+    .member-img{
+      width: 150px;
+      height: 150px;
+    }
+
+    .banner-slide {
+      height: 10%;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!--Inicio de navar y branding de la pagina-->
+  <nav class="navbar sticky-top bg-opacity-50 bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Juventud Emprendedora</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Fin de navbar-->
+  
+  <!--Empieza contenedor para el contenido-->
+  <div class="container-fluid">
+    <section class="banner-slide section-bg">
+      <!--Inicio de Carrousel de imagenes-->
+  <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/IMG_20230211_141221.jpg" class="d-block w-100" alt="..." />
+        <!-- <div class="carousel-caption d-none d-md-block">
+          <h5>Parroquia Sagrada Familia</h5>
+          <p>Fundada en el año 1900.</p>
+        </div> -->
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/20230204_153844.jpg" class="d-block w-100" alt="..." />
+        <!-- <div class="carousel-caption d-none d-md-block">
+          <h5>Juventud Emprendedora</h5>
+          <p>Movimiento local</p>
+        </div> -->
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/IMG_20230211_143101.jpg" class="d-block w-100" alt="..." />
+        <!-- <div class="carousel-caption d-none d-md-block">
+          <h5>Verano Feliz</h5>
+          <p>Actividad realizada para niños del correjimiento</p>
+        </div> -->
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--Fin de carrousel de imagenes-->
+    </section>
+    <!--Empieza quienes somos-->
+    <section id="about" class="about section-bg">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="section-title">
+          <h5 class="section-title h1">Sobre Nosotros</h5>
+          <p>Traemos actividades positivas al corregimiento</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100"> <img
+              src="assets/images/logo.png" class="img-fluid" alt=""></div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center aos-init aos-animate"
+            data-aos="fade-up" data-aos-delay="100">
+            <h3>Nuestro objetivo como grupo <span><b>sin fines de lucro o politico</b></span></h3>
+            <p class="fst-italic"> Juventud emprendedora nace de personas del corregimiento con el único interés de
+              traer mejoras y actividades a las comunidades, <span>sin ningún fin de lucro o político</span>, todos son
+              bienvenidos a
+              participar y apoyar.</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Termina quienes somos-->
+    <section id="events" class="events section-bg">
+      <!--inicio de seccion de actividades-->
+      <div class="container">
+        <h5 class="section-title h1">Actividades</h5>
+      <div class="card-group">
+        <div class="card">
+          <img src="assets/images/veranofeliz.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Verano Feliz 2023</h5>
+            <p class="card-text">                Esta es nuestra actividad inicial realizada en la comunidad de San Isidro, especificamente en el cuadro</p>
+            <p class="card-text"><small class="text-muted">4 de febrero de 2023</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/veranofeliz.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Verano Feliz <span><b>El Valle de San Isidro</b></span></h5>
+            <p class="card-text">                Segunda actividad realizada en la comunidad del valle.</p>
+            <p class="card-text"><small class="text-muted">26 de febrero 2023</small></p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--fin de actividades-->
+    </section>
+
+    <!--Inicia Grupo de trabajo-->
+    <!-- <section id="team" class="team section-bg">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Equipo</h2>
+          <h3>Nuestro <span>Equipo</span> de trabajo</h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
+            vitae autem.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="member">
+              <div class="member-img"> <img src="assets/images/user-profile-icon.png" class="img-fluid" alt="">
+                <div class="social"> <a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
+                      class="bi bi-facebook"></i></a> <a href=""><i class="bi bi-instagram"></i></a> <a href=""><i
+                      class="bi bi-linkedin"></i></a></div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4> <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
+            data-aos-delay="200">
+            <div class="member">
+              <div class="member-img"> <img src="assets/images/user-profile-icon.png" class="img-fluid" alt="">
+                <div class="social"> <a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
+                      class="bi bi-facebook"></i></a> <a href=""><i class="bi bi-instagram"></i></a> <a href=""><i
+                      class="bi bi-linkedin"></i></a></div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4> <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
+            data-aos-delay="300">
+            <div class="member">
+              <div class="member-img"> <img src="assets/images/user-profile-icon.png" class="img-fluid" alt="">
+                <div class="social"> <a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
+                      class="bi bi-facebook"></i></a> <a href=""><i class="bi bi-instagram"></i></a> <a href=""><i
+                      class="bi bi-linkedin"></i></a></div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4> <span>CTO</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
+            data-aos-delay="400">
+            <div class="member">
+              <div class="member-img"> <img src="assets/images/user-profile-icon.png" class="img-fluid" alt="">
+                <div class="social"> <a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
+                      class="bi bi-facebook"></i></a> <a href=""><i class="bi bi-instagram"></i></a> <a href=""><i
+                      class="bi bi-linkedin"></i></a></div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4> <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!--Termina grupo de trabajo-->
+
+  </div>
+  </div>
+  <!--Termina contenedor del contenido-->
+
+  <!--Empieza el footer de la pagina-->
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Siguenos en nuestras redes:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.instagram.com/juventud_emprendedora_ot/?hl=es-la" class="me-4 link-secondary">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@juventud_emprendedora_ot" class="me-4 link-secondary">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>Corregimiento de Omar Torrijos
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p>
+              <i class="fas fa-home me-3 text-secondary"></i> San Isidro
+            </p>
+            <!-- <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@example.com
+            </p>
+            <p>
+              <i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88
+            </p> -->
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025)">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://jdlm.xyz/">jldm_dev</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <!--Termina el footer de la pagina-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
